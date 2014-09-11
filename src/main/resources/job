@@ -1,0 +1,21 @@
+cd ../android-info-end
+d:\apache-maven-3.2.3\bin\mvn clean
+
+
+
+
+
+
+
+
+cd ../android-info-end
+
+set a=%time:~3,2%
+set a1=%time:~0,2%
+set /a b=%a%+1
+
+at %a1%:%b% C:\jenkins\workspace\android-info-end\src\main\resources\get-android-info.bat
+cd ../Android_Smoke_New
+ant transform
+
+ant -f rebuild.xml

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <parameter name="browserType" value="firefox" />
+    <test name="Browser Compatibility Test Cases--firefox" thread-count="1" preserve-order="false">
+        <packages>
+            <package name="com.meilishuo.android.performance" />
+        </packages>
+    </test>
+</suite>
