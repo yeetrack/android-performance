@@ -1,0 +1,24 @@
+<html>
+<head>
+
+<title>JSChart</title>
+
+<script type="text/javascript" src="jscharts.js"></script>
+
+</head>
+<body>
+<div id="result">
+<h3>com.miui.home_cpu.html</h3><div id="graph">Loading graph...</div>
+
+<script type="text/javascript">
+	
+	var myChart = new JSChart('graph', 'line');
+	myChart.setDataXML("com.miui.home_cpu.xml");
+	myChart.draw();
+	
+</script>
+
+
+</div>
+</body>
+</html>

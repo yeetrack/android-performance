@@ -1,0 +1,24 @@
+<html>
+<head>
+
+<title>JSChart</title>
+
+<script type="text/javascript" src="jscharts.js"></script>
+
+</head>
+<body>
+<div id="result">
+<h3>com.android.phone_mem.html</h3><div id="graph">Loading graph...</div>
+
+<script type="text/javascript">
+	
+	var myChart = new JSChart('graph', 'line');
+	myChart.setDataXML("com.android.phone_mem.xml");
+	myChart.draw();
+	
+</script>
+
+
+</div>
+</body>
+</html>
